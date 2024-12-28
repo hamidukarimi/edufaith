@@ -7,7 +7,7 @@ function Hero() {
     return (
         
       <>
-        <section id="hero_section">
+        <section style={{backgroundImage: "url(./hero-background.jpg)",}} id="hero_section">
       <div class="overlay"></div>
       <div class="content">
           <h1>ISLAMIC PLATFORM <br/> FOR ALL MUSLIMS</h1> <br/>
