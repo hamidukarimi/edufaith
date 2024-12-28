@@ -1,0 +1,50 @@
+.indexCategories{
+  padding: 15px;
+}
+#categoriesParent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  
+}
+.quran-div{ width: 100%; height: 73px; box-sizing: border-box; box-shadow: 0 10px 20px rgba(134, 134, 134, 0.1); border: 2px solid #4a4a4ada; border-radius: 10px; display: flex; justify-content: space-between; align-items: center; padding: 15px; margin-bottom: 10px;}
+.quran-div:hover {
+  background-color: #232323; /*a235g*/
+  transition: 0.3s ease;
+}
+
+.category { height: auto; text-align: center; border-radius: 10px; box-sizing: border-box; box-shadow: 0 10px 20px rgba(100, 100, 100, 0.1); border: 2px solid #4a4a4ada; padding: 15px 5px 15px 5px;}
+.category:active {
+  background-color: #232323; /*a235g*/
+}
+.category-img{
+    width: 49%;
+    border-radius: 100%;
+}
+.category-img-parent{
+    display: flex;
+    justify-content: center;
+}
+.category p {
+  padding-top: 5px;
+  font-size: 23px;
+  line-height: 1;
+}
+@media only screen and (min-width: 950px) and (max-width: 3000px) {
+  #categoriesParent { 
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .category {
+    margin: 7px;
+  }
+  .category:hover {
+    background-color: #232323; /*a235g*/
+    transition: 0.2s ease;
+  }
+  .category-img {
+    width: 13%;
+  }
+  .category p {
+    font-size: 27px;
+  }
+}

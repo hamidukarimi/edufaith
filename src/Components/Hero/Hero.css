@@ -1,0 +1,53 @@
+/* .container {
+  
+}
+@media only screen and (min-width: 45px) and (max-width: 768px) {
+  .container {
+    padding: 0;
+  }
+} */
+ .heroContainer {
+  padding: 0;
+ }
+#hero_section{ position: relative; width: 100%; height: auto; background-image: url(./Hero-background.jpg); background-size: cover; background-position: center; display: flex; justify-content: center; align-items: center; text-align: center; padding: 20px 10px;}
+.overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 1;}
+
+.content {
+  z-index: 2;
+}
+@media only screen and (min-width: 950px) and (max-width: 3000px) {
+  #hero_section {
+    height: 580px;
+    padding: 240px;
+  }
+}
+
+
+.content h1 {
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 20px;
+}
+
+
+.input{
+    width: 92%;
+    height: 43px;
+    border-radius: 10px;
+    border: 1px solid rgb(102, 139, 157);
+    padding-left: 15px;
+    background-color: black; /*a235g*/
+    margin-left: -10px;
+}
+.input_div{
+    display: flex;
+    justify-content: center;
+}
+.input_submit {
+  margin-left: -38px; border: none; padding: 0; background-color: transparent;
+}
+.input::placeholder{ font-size: 20px; color: rgb(115, 138, 148);} /*a235g*/

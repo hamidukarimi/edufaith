@@ -1,0 +1,128 @@
+.loading_page {
+  width: 100vw;
+  height: 100vh;
+  background-color: black; /*a235g*/
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#spinner {
+  width: 50px;
+  height: 50px;
+}
+.playComponentsCloseBtn {
+    font-size: 38px;
+    color: white;
+    position: absolute;
+    z-index: 999999;
+    cursor: pointer;
+} 
+::-webkit-scrollbar {
+  background-color: rgb(94, 94, 94);
+  width: 6px;
+}
+.openPagesFixComponent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: black;
+  width: 100vw;
+  height: 100%;
+  scrollbar-width: thin;
+}
+.itsCloseNav {
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  cursor: pointer;
+}
+.itsCloseNav:hover {
+  color: rgb(164, 164, 164);
+  transition: 0.3s ease;
+}
+#corePageUl li {
+  padding-top: 10px; 
+}
+
+body{
+    font-family: Poppins, sans-serif !important;
+    background-color: black;
+    color: rgb(224, 224, 224);
+    animation: myBox 0.5s ease;
+    overflow-x: hidden;
+  }
+
+@media only screen and (min-width: 950px) and (max-width: 3000px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+ 
+
+  @keyframes myBox {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .iframe {position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: 999;}
+  input {outline: none; color: white;}
+  a {text-decoration: none;color: white;}
+  .some-br {display: none;}
+  @media only screen and (min-width: 200px) and (max-width: 382px) { .some-br { display: block;}}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+  .light {
+    --bg-color: white;
+    --text-color: black;
+  }
+  
+  .dark {
+    --bg-color: black;
+    --text-color: white; 
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+    
+  } */
+
+
+
+  /* body, body *:not([style]) {
+    color: rgb(214, 213, 213) !important;
+}
+body {
+    background: none;
+    background-color: rgb(19, 19, 19);
+}
+input, textarea {
+    background-color: transparent;
+}
+.card {
+    background-color: #282828;
+    border: 1px solid dodgerblue;
+} */

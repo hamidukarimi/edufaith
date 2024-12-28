@@ -1,0 +1,8 @@
+
+.iconPageName{ color: white; /*a235g*/ font-weight: bold; margin-top: 2px; margin-bottom: 2px; padding-left: 10px; font-size: 23px; }
+  /* .another-nav{ display: flex; justify-content: start; background-color: black;   } */ /*a235g*/
+  .go-back { cursor: pointer; border-right: 1px solid rgb(135, 135, 135); padding: 17px; margin-left: -35px;}
+  .go-back:hover {
+    background-color: #333436; /*a235g*/
+    transition: 0.2s ease;
+  }

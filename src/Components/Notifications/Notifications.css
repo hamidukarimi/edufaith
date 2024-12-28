@@ -1,0 +1,31 @@
+
+.notification-main {   display: flex; justify-content: center; align-items: center;  height: 35vh;
+  width: 91%;
+  position: fixed;
+  top: 65px;
+  border-radius: 15px;
+  box-shadow: 0 3px 20px rgba(228, 228, 228, 0.1);
+  left: 20px;
+  background-color: black; /*a235g*/   
+  z-index: 9999;
+  animation: this 0.3s ease-in-out;
+}
+.notifi-parent {display:  block; text-align: center;}
+
+@keyframes this {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 950px) and (max-width: 3000px) {
+  .notification-main {
+    width: 26%;
+    left: 72%;
+  }
+}

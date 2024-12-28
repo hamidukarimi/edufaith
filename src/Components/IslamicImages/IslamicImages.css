@@ -1,0 +1,366 @@
+.islamicImagesHero {
+  width: 100vw;
+  height: 430px;
+
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  background-image: url(./islamic-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.islamicImagesHero h1 {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+#download-icon { display: none;} 
+
+.handleImgDiv {
+  position: relative;
+  overflow: hidden;
+  /* height: 200px; */
+  height: 137px;
+  cursor: pointer;
+  object-fit: cover;
+
+}
+.handleImgDiv:hover #download-icon { display: block;}
+
+
+
+.isImagesParent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+@media only screen and (min-width: 950px) and (max-width: 3000px) {
+  .handleImgDiv { 
+    height: 200px;
+  }
+  .isImgInputHeadingParent {
+    margin-right: 600px;
+    margin-top: 250px;
+    margin-left: 20px;
+  }
+  .isImagesParent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+  }
+}
+
+.openImageImg {
+  width: 100%;
+  min-height: 200px;
+  height: auto;
+  max-height: 570px;
+  background-color: darkblue;
+  overflow: hidden;
+}
+.repdownBtnsPrent {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+@media only screen and (min-width: 950px) and (max-width: 3000px) {
+  .openImageImg {
+    width: 50%;
+    min-height: 200px;
+    height: auto;
+    max-height: 680px;
+    background-color: darkblue;
+    overflow: hidden;
+  }
+  .repdownBtnsPrent {
+    width: 50%;
+  }
+  
+}
+
+.downloadAndReportBtns {
+  padding: 14px 0;
+  width: 100%;
+  font-size: 17px;
+}
+
+@keyframes smothPlaceholder {
+  0% {
+    background-color: #5a5a5a;
+  }
+  100% {
+    background-color: #232323;
+  }
+}
+
+
+
+
+
+
+/* Modal Background */
+.reportModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Darker overlay for sleekness */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  z-index: 9999;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Modal Content */
+.modalContent {
+  position: absolute;
+  bottom: 0;
+  background-color: #000000; /* Sleek dark background */
+  padding: 40px 12px;
+  border-radius: 16px 16px 0 0;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 4px 25px rgba(106, 106, 106, 0.4); /* Modern shadow */
+  border-top: 1px solid rgb(30, 30, 30);
+  /* text-align: center; */
+  color: #ffffff;
+  font-family: 'Inter', sans-serif; /* Modern font */
+  transform: scale(0.95);
+  animation: reportSlideUp 0.3s ease-out forwards;
+}
+.reportReasonsParent {
+  font-size: 22px;
+}
+.reportReasonsParent div {
+  /* border-top: 1px solid rgba(255, 255, 255, 0.674); */
+  /* padding-top: 8px; */
+  padding: 8px 5px;
+}
+.reportReasonsParent div:hover {
+  background-color: rgb(23, 23, 23); /*changeeee*/
+  transition: 0.3s ease;
+
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes reportSlideUp {
+  0% {
+    transform: translateY(100%);
+    /* opacity: 0; */
+  }
+  100% {
+    transform: translateY(0);
+    /* opacity: 1; */
+  }
+}
+
+/* Modal Title */
+.modalTitle {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #e0e0e0; /* Lighter text for title */
+}
+
+/* Dropdown Styling */
+.reportSelect {
+  width: 100%;
+  padding: 14px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.reportSelect:hover {
+  background-color: #444; /* Subtle hover effect */
+}
+
+.reportSelect option {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Modal Actions - Buttons */
+.modalActions {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.modalActions button {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.modalActions .btn-submit {
+  background-color: #1dbf73; /* Accent color for submit button */
+  color: white;
+}
+
+.modalActions .btn-submit:hover {
+  background-color: #1a9e63; /* Slightly darker green */
+  transform: scale(1.05);
+}
+
+.modalActions .btn-close {
+  background-color: #444; /* Dark button */
+  color: white;
+}
+
+.modalActions .btn-close:hover {
+  background-color: #555; /* Lighter dark on hover */
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+.shareOptionsContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.shareOptionsModal {
+  background-color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  animation: shareSlideUp 0.3s ease-out;
+}
+
+.shareOptionsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.shareOptionsTitle {
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 0;
+  animation: fadeInText 0.5s ease-in-out forwards;
+}
+
+.closeShareOptionsBtn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.shareOptionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.shareOption {
+  background: #444;
+  padding: 12px;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  animation: fadeInOption 0.5s ease-in-out forwards;
+}
+
+.shareOption:hover {
+  background: #555;
+  transform: scale(1.05);
+}
+
+.shareOption svg {
+  font-size: 18px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shareSlideUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOption {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* 
+#babaKarimi {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+} */

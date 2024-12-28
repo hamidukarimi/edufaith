@@ -1,0 +1,109 @@
+.categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 17px;
+  margin-top: 20px;
+}
+.common-category {
+  /* height: 80px;
+  border-radius: 8px;
+  background-color: black  a235g;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(102, 131, 160);
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+
+  background-color: #2a2a2a;
+  height: auto;
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.common-category:hover {
+  background-color: #1f1f1f;
+}
+#companions_parent {
+  padding: 20px;
+}
+@media only screen and (min-width: 950px) and (max-width: 3000px) {
+  .categories {
+    gap: 25px;
+  }
+  #companions_parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+}
+
+/* for all hadiths books */
+
+.card {
+  width: 100%;
+  height: auto;
+  background-color: black; /*a235g*/
+  color: white; /*a235g*/
+  padding: 13px;
+  border-radius: 14px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 20px rgba(228, 228, 228, 0.1);
+}
+.card:hover {
+  border: 1px solid dodgerblue;
+  transition: 0.3s ease;
+}
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.c-number {
+  font-size: 27px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.copy {
+  padding: 11px;
+  border-radius: 50%;
+  display: flex;
+  font-size: 25px;
+  cursor: pointer;
+}
+.copy:hover {
+  background-color: #323232b2;
+} /*a235g*/
+.card-text {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: end;
+}
+@media only screen and (min-width: 950px) and (max-width: 3000px) {
+  .cardsParent {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+  .card {
+    padding: 20px;
+  }
+}
+
+/* for islamic battles */
+
+/* for Dua page */
+
+.dua-card-parent {
+  /* display: "grid", gridTemplateColumns: "repeat(3, 1fr) ", gap: "20px" */
+  display: block;
+}
+
+@media only screen and (min-width: 950px) and (max-width: 3000px) {
+  .dua-card-parent {
+    /* display: "grid", gridTemplateColumns: "repeat(3, 1fr) ", gap: "20px" */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}

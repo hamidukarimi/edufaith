@@ -1,0 +1,112 @@
+ 
+.sidebar { 
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  overflow-y: scroll; width: 230px; height: 100vh; background-color: black; /*a235g*/  color: white; /*a235g*/ position: fixed; top: 0; left: 0; transition: left 0.3s ease; z-index: 4;
+}
+.sidebar:hover {
+  scrollbar-color: rgb(47, 47, 47) rgb(47, 47, 47);
+}
+.sidebar-closed {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+.sidebar-open {
+  /* transform: translateX(0); */
+  transition: transform 0.3s ease;
+}
+@media only screen and (min-width: 950px) and (max-width: 3000px) {
+  .sidebar-closed {
+    transition: transform 0s ease;
+  }
+  .sidebar-open {
+    transition: transform 0s ease;
+  }
+}
+
+  /* .dark-sidebar { background-color: black; color: white; } */
+  .website-logo {width: 43px;}
+  .edufaith-logo-text-span {margin-top: 15px; margin-left: 7px;}
+  #edufaith-logo-text {font-size: 20px; font-weight: bold;}
+
+
+  .sidebar.active {
+    left: 0;
+  }
+  body, html {
+    margin: 0;
+    padding: 0;
+  }
+  .sidebar-divs { padding: 10px 15px; border-radius: 0 7px 7px 0; width: 95%; cursor: pointer; }
+  .logo-and-name-parent {display: flex; align-items: center;}
+  @media only screen and (min-width: 950px) and (max-width: 3000px) {
+    .logo-and-name-parent {
+      display: none;
+    }
+    #close-btn {
+      display: none;
+    }
+    .sidebar {
+      background-color: rgb(10, 10, 10); /*a235g*/
+      top: 83px;
+      
+
+      /* transform: translateY(82px); */
+    }
+    .sidebar-logo-div {
+      display: none;
+    }
+  }
+  .sidebar-logo-div {height: 65px; justify-content: space-between;}
+  #close-btn {font-size: 22px;}
+  .page-type:hover {
+    background-color: #575757;
+    transition: 0.2s ease;
+  }
+  .sidebar-divs-parent{
+    display: block;
+  }
+ 
+  .sid-div-icons {
+    font-size: 22px;
+    margin-right: 15px;
+  }
+ 
+  .someHeading {
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 10px;
+  }
+ 
+  #devlopers-img {width: 40px; height: 40px; border-radius: 100%;}
+  
+
+ 
+
+
+.menu-bar {
+  position: fixed;
+  top: 140px;
+  left: 0;
+  display: block;
+}
+.menu-bar div {
+  padding: 13px 23px;
+  font-size: 23px;
+  text-align: center;
+}
+.menu-bar div:hover {
+  background-color: #575757; /*a235g*/
+  transition: 0.3s ease;
+}
+.menu-bar p {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 45px) and (max-width: 768px) {
+  .menu-bar {
+    display: none;
+  }
+}

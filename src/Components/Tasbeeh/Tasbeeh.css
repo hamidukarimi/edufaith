@@ -1,0 +1,46 @@
+.tasbeeh-body {
+    width: auto;
+    height: 100vh;
+    background-image: url(./tasbeeh-bg.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  
+  .tasbeeh-parent {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    scrollbar-width: thin; 
+    width: auto;
+    gap: 20px;
+  }
+  #specific_element {
+    margin-top: 20%;
+  }
+  #specific_element2 {
+    margin-top: 18%;
+  }
+  .show-tasbeeh-screen { width: 95%; height: 170px; background-color: rgb(5, 5, 5); /*a235g*/ border-radius: 17px; border: 1px solid rgb(88, 88, 88); margin: 40px 10px; box-shadow: 0 10px 20px rgba(225, 225, 225, 0.1); display: flex; justify-content: center; align-items: center; font-size: 45px; text-align: center;}
+  .tasbeeh-types { width: 130px; height: 95px; background-color: black; /*a235g*/ border-radius: 14px; border: 1px solid rgb(85, 84, 84); box-shadow: 0 10px 20px rgba(223, 223, 223, 0.1); flex-shrink: 0; /* Add this line */ display: flex; justify-content: center; align-items: center; font-size: 18px; text-align: center; cursor: pointer;}
+  .tasbeeh-number {width: 95px; height: 90px; background-color: black; /*a235g*/ border-radius: 14px; border: 1px solid rgb(85, 84, 84); box-shadow: 0 10px 20px rgba(226, 226, 226, 0.1); display: flex; justify-content: center; align-items: center; font-size: 3rem;}
+
+
+  @media only screen and (min-width: 950px) and (max-width: 3000px) {
+
+    .show-tasbeeh-screen {
+      width: 80%;
+      height: 200px;
+    }
+    #specific_element {
+      margin-top: 200px;
+    }
+    #specific_element2 {
+      margin-top: 2em;
+    }
+
+    .tasbeeh-parent {
+      overflow-x: hidden;
+    }
+
+  }

@@ -1,0 +1,53 @@
+.navbar { position: -webkit-sticky; top: 0; position: sticky; border-bottom: 1px solid rgb(64, 58, 58); display: flex; justify-content: space-between; align-items: center; background-color: black; /*a235g*/ padding: 10px 20px; z-index: 3;}
+
+.nav-search-input {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .helpBtn {
+    display: none;
+  }
+  .nav-input[type="text"] { width: 100%; background-color: black; /*a235g*/ padding: 8px; border: none; border-radius: 12px; box-shadow: rgb(106, 104, 104) 0px 0px 0px 1px; }
+  .nav-input[type="text"]::placeholder {
+    color: #998f8f; /*a235g*/ 
+  }
+  .forLargeDevice {
+    display: none;
+  }
+  @media only screen and (min-width: 950px) and (max-width: 3000px) {
+    .navbar {
+      padding: 10px 25px;
+    }
+    .nav-search-input {
+      display: flex;
+      justify-content: center;
+    }
+    .nav-input[type="text"] {
+      width: 35%;
+    }
+    .forLargeDevice {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .helpBtn {
+      display: block;
+    }
+    
+  }
+  .menu-icon span,
+  .notification-icon span { font-size: 24px; color: rgb(255, 255, 255); /*a235g*/ cursor: pointer; display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; border-radius: 50%;
+  }
+  .menu-icon span:active, .notification-icon span:active {background-color: #333436;} /*a235g*/
+  #notifa-icon {color: dodgerblue;}
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

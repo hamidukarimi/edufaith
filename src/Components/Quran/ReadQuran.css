@@ -1,0 +1,11 @@
+.currentAyahParent {
+    direction: rtl;
+    font-size: 33px;
+    letter-spacing: 2px;
+}
+.my-3:hover {
+    color: rgb(68, 162, 255);
+}
+.QUR_activeBtns:active {
+    color: gray;
+}
