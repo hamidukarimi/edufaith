@@ -48,7 +48,7 @@ function Menus() {
 
   return (
     <>
-      <menus>
+      <div className="menus">
         {menusItems.map((menusItem) => (
           <NavLink
             key={menusItem.objectId}
@@ -71,7 +71,7 @@ function Menus() {
             </div>
           </NavLink>
         ))}
-      </menus>
+      </div>
     </>
   );
 }
