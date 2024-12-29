@@ -121,12 +121,12 @@ function Categories() {
             <NavLink to="./quranCategories">
               <div className="quran-div">
                 <img
-                  style={{ width: "83px" }}
-                  className="card-img"
+                   
+                  className="qur_div_icon"
                   src="./Quran.png"
                   alt=""
                 />
-                <h1 style={{ marginTop: "7px" }}>اقرأ القرآن</h1>
+                <p className="mt-2" >اقرأ القرآن</p>
               </div>
             </NavLink>
 

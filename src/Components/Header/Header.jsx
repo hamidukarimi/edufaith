@@ -11,11 +11,11 @@ import Overlay from "../Overlay/Overlay";
 import { NavLink } from "react-router-dom";
 
 function Header() {
-  const [sidebarOpen, setSidebarOpen] = useState(window.innerWidth > 500);
+  const [sidebarOpen, setSidebarOpen] = useState(window.innerWidth > 1000);
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth > 500) {
+      if (window.innerWidth > 1000) {
         setSidebarOpen(true);
       } else {
         setSidebarOpen(false);
@@ -53,11 +53,11 @@ function Header() {
   return (
     <>
       <nav className="navbar">
-        <div className="menu-toggle menu-icon">
-          <span onClick={toggleSidebar}>
+ 
+          <span className="menu-toggle menu-icon" onClick={toggleSidebar}>
             <FontAwesomeIcon icon={faBars} />
           </span>
-        </div>
+        
 
         <span className="forLargeDevice">
           <NavLink to="/">
@@ -70,21 +70,19 @@ function Header() {
           <p className="pt-3">EduFaith</p>
         </span>
 
-        <div className="nav-search-input">
+   
           <input
-            className="nav-input"
+            className="nav-input "
             type="text"
             placeholder="Search..."
           ></input>
-        </div>
+     
         <NavLink to="/helpCenter">
           <button className="btn btn-secondary m-2 helpBtn">Help</button>
-        </NavLink>
-        <span onClick={handleNotifications} className="notification-icon">
-          <span>
+        </NavLink> 
+          <span onClick={handleNotifications} className="notification-icon">
             <FontAwesomeIcon id="notifa-icon" icon={faBell} />
-          </span>
-        </span>
+          </span> 
       </nav>
 
       <div

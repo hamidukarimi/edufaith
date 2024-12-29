@@ -1,14 +1,25 @@
-.navbar { position: -webkit-sticky; top: 0; position: sticky; border-bottom: 1px solid rgb(64, 58, 58); display: flex; justify-content: space-between; align-items: center; background-color: black; /*a235g*/ padding: 10px 20px; z-index: 3;}
+.navbar {
+  position: -webkit-sticky;
+  top: 0;
+  position: sticky;
+  border-bottom: 1px solid rgb(64, 58, 58);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black; /*a235g*/
+  padding: 10px 9px;
+  z-index: 3;
+}
 
-.nav-search-input {
+/* .nav-search-input {
     flex: 1;
     margin: 0 20px;
-  }
+  } */
   
   .helpBtn {
     display: none;
   }
-  .nav-input[type="text"] { width: 100%; background-color: black; /*a235g*/ padding: 8px; border: none; border-radius: 12px; box-shadow: rgb(106, 104, 104) 0px 0px 0px 1px; }
+  .nav-input[type="text"] { width: 100%; background-color: black; /*a235g*/ padding: 8px; border: none; border-radius: 12px; box-shadow: rgb(106, 104, 104) 0px 0px 0px 1px; margin: 0 10px; flex: 1; }
   .nav-input[type="text"]::placeholder {
     color: #998f8f; /*a235g*/ 
   }
@@ -37,10 +48,10 @@
     }
     
   }
-  .menu-icon span,
-  .notification-icon span { font-size: 24px; color: rgb(255, 255, 255); /*a235g*/ cursor: pointer; display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; border-radius: 50%;
+  .menu-icon, .notification-icon {
+    font-size: 24px; color: rgb(255, 255, 255); /*a235g*/ cursor: pointer; display: flex; justify-content: center; align-items: center; border-radius: 50%; padding: 10px ; 
   }
-  .menu-icon span:active, .notification-icon span:active {background-color: #333436;} /*a235g*/
+  .menu-icon:active, .notification-icon:active {background-color: #333436;} /*a235g*/
   #notifa-icon {color: dodgerblue;}
 
   @keyframes fadeIn {
@@ -51,3 +62,57 @@
       opacity: 1;
     }
   }
+
+
+
+  @media only screen and (max-width: 350px) {
+    .menu-icon, .notification-icon {
+      font-size: 23px; 
+    } 
+  }
+
+  @media only screen and (max-width: 340px) {
+    .menu-icon, .notification-icon {
+      font-size: 22px; padding: 9px;
+    }
+    .nav-input[type="text"] {
+       padding: 7px; margin: 0 9px;
+    } 
+  }
+
+  @media only screen and (max-width: 315px) {
+    .navbar { 
+      padding: 10px 8px;
+    }
+    .menu-icon, .notification-icon {
+      font-size: 21px; padding: 8px;
+    }
+    .nav-input[type="text"] {
+       padding: 7px; margin: 0 8px;
+    } 
+  }
+
+  @media only screen and (max-width: 285px) {
+    .navbar { 
+      padding: 10px 7px;
+    }
+    .menu-icon, .notification-icon {
+      font-size: 20px; padding: 8px;
+    }
+    .nav-input[type="text"] {
+       padding: 6px; margin: 0 8px;
+    } 
+  }
+
+  @media only screen and (max-width: 215px) {
+    .navbar { 
+      padding: 10px 7px;
+    }
+    .menu-icon, .notification-icon {
+      font-size: 19px; padding: 7px;
+    }
+    .nav-input[type="text"] {
+      margin: 0 7px;
+    } 
+  }
+  

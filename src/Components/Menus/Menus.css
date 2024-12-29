@@ -8,10 +8,10 @@
   justify-content: space-around;
   align-items: center;
   border-top: 1px solid #393939;
-  z-index: 1;
+  z-index: 3;
 }
 
-@media only screen and (min-width: 950px) and (max-width: 3000px) {
+@media only screen and (min-width: 800px) and (max-width: 3000px) {
   .menus {
     display: none;
   }
@@ -36,8 +36,7 @@
   .menus-item {
      padding: 10px 20px;
      font-size: 22px;
-   }
-   
+   } 
 } 
 @media only screen and (max-width: 470px) {
   .menus-item {

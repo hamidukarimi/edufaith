@@ -7,7 +7,15 @@
   gap: 10px;
   
 }
-.quran-div{ width: 100%; height: 73px; box-sizing: border-box; box-shadow: 0 10px 20px rgba(134, 134, 134, 0.1); border: 2px solid #4a4a4ada; border-radius: 10px; display: flex; justify-content: space-between; align-items: center; padding: 15px; margin-bottom: 10px;}
+.quran-div{ width: 100%; height: 73px; font-size: 25px; box-sizing: border-box; box-shadow: 0 10px 20px rgba(134, 134, 134, 0.1); border: 2px solid #4a4a4ada; border-radius: 10px; display: flex; justify-content: space-between; align-items: center; padding: 15px; margin-bottom: 10px;}
+.qur_div_icon { width: 83px;}
+@media only screen and (max-width: 305px) {
+  .quran-div {
+    height: 63px;
+    font-size: 22px;
+  }
+  .qur_div_icon {width: 70px;}
+}
 .quran-div:hover {
   background-color: #232323; /*a235g*/
   transition: 0.3s ease;
@@ -29,6 +37,113 @@
   padding-top: 5px;
   font-size: 23px;
   line-height: 1;
+}
+@media only screen and (min-width: 440px) and (max-width: 767px)  {
+  #categoriesParent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    
+  }
+  .category {
+    height: 160px;
+    padding: 18px 10px 15px 10px;
+  }
+  .category p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 949px)  {
+  #categoriesParent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    
+  }
+  .category {
+    height: 200px;
+    padding: 18px 10px 15px 10px;
+  }
+  .category p {
+    font-size: 19px;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 336px) {
+  .category p { 
+    font-size: 21px;
+    line-height: 0.8;
+  }
+}
+@media only screen and (max-width: 312px) {
+  .category p { 
+    font-size: 18px;
+    line-height: 0.6;
+  }
+}
+@media only screen and (max-width: 290px) {
+  .category p { 
+    font-size: 16px;
+    line-height: 0.5;
+  }
+
+  .quran-div {
+    height: 60px;
+    font-size: 20px;
+  }
+  .qur_div_icon {width: 66px;}
+}
+@media only screen and (max-width: 275px) {
+  .category p { 
+    font-size: 14px;
+    line-height: 0.4;
+  }
+
+  .quran-div {
+    height: 58px;
+    font-size: 19px;
+  }
+  .qur_div_icon {width: 61px;}
+}
+@media only screen and (max-width: 243px) {
+  .category p { 
+    font-size: 13px;
+    line-height: 0.3;
+  }
+
+  .quran-div {
+    height: 56px;
+    font-size: 17px;
+  }
+  .qur_div_icon {width: 57px;}
+}
+@media only screen and (max-width: 223px) {
+  .category p { 
+    font-size: 12px;
+    line-height: 0.2;
+  }
+
+  .quran-div {
+    height: 53px;
+    font-size: 16px;
+  }
+  .qur_div_icon {width: 53px;}
+}
+@media only screen and (max-width: 200px) {
+  .category p { 
+    font-size: 11px;
+    line-height: 0.1;
+  }
+
+  .quran-div {
+    height: 50px;
+    font-size: 15px;
+  }
+  .qur_div_icon {width: 50px;}
 }
 @media only screen and (min-width: 950px) and (max-width: 3000px) {
   #categoriesParent { 

@@ -34,6 +34,7 @@
 }
 
 
+
 .input{
     width: 92%;
     height: 43px;
@@ -51,3 +52,259 @@
   margin-left: -38px; border: none; padding: 0; background-color: transparent;
 }
 .input::placeholder{ font-size: 20px; color: rgb(115, 138, 148);} /*a235g*/
+#hero_search_icon { width: 30px;}
+@media only screen and (max-width: 315px) {
+  .input {
+    height: 41px;
+  }
+  .input::placeholder {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 290px) {
+  .input {
+    height: 39px;
+  }
+  .input::placeholder {
+    font-size: 16px;
+  }
+  #hero_search_icon { width: 28px;}
+}
+@media only screen and (max-width: 265px) {
+  .input {
+    height: 38px;
+  }
+  .input::placeholder {
+    font-size: 14px;
+  }
+  #hero_search_icon { width: 25px;}
+}
+@media only screen and (max-width: 240px) {
+  .input {
+    height: 36px;
+  }
+  .input::placeholder {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 227px) {
+  .input {
+    height: 35px;
+  }
+  .input::placeholder {
+    font-size: 11px;
+  }
+  #hero_search_icon { width: 22px;}
+}
+@media only screen and (max-width: 200px) {
+  .input {
+    height: 34px;
+  }
+  .input::placeholder {
+    font-size: 10px;
+  }
+  #hero_search_icon { width: 20px;}
+}
+
+
+/* device larging... */
+
+@media only screen and (min-width: 470px) {
+  .content h1 { 
+    font-size: 37px;
+  }
+  .content p {
+    font-size: 21px;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .content h1 { 
+    font-size: 38px;
+  }
+  .content p {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 532px) {
+  .content h1 { 
+    font-size: 40px;
+  }
+  .content p {
+    font-size: 23px;
+  }
+}
+@media only screen and (min-width: 555px) {
+  .content h1 { 
+    font-size: 42px;
+  }
+  .content p {
+    font-size: 24px;
+  }
+}
+
+
+
+
+/* device smalling... */
+
+@media only screen and (max-width: 375px) {
+  .content h1 { 
+    font-size: 34px;
+  }
+} 
+@media only screen and (max-width: 358px) {
+  .content h1 { 
+    font-size: 32px;
+  }
+  .content p {
+    font-size: 19px;
+  }
+} 
+@media only screen and (max-width: 340px) {
+  .content h1 { 
+    font-size: 31px;
+  }
+  .content p {
+    font-size: 18px;
+  }
+} 
+@media only screen and (max-width: 326px) {
+  .content h1 { 
+    font-size: 30px;
+  }
+  .content p {
+    font-size: 17px;
+  }
+  .hero_learnBtn {
+    font-size: 15px;
+  }
+} 
+@media only screen and (max-width: 316px) {
+  .content h1 { 
+    font-size: 29px;
+  }
+  .content p {
+    font-size: 16px;
+  }
+  .hero_learnBtn {
+    font-size: 13px;
+  }
+} 
+@media only screen and (max-width: 306px) {
+  .content h1 { 
+    font-size: 28px;
+  }
+  .content p {
+    font-size: 15px;
+  }
+} 
+@media only screen and (max-width: 296px) {
+  .content h1 { 
+    font-size: 27px;
+  }
+  .content p {
+    font-size: 14px;
+  }
+  .hero_learnBtn {
+    font-size: 11px;
+  }
+} 
+@media only screen and (max-width: 286px) {
+  .content h1 { 
+    font-size: 26px;
+  }
+  .content p {
+    font-size: 13px;
+  }
+  .hero_learnBtn {
+    font-size: 9px;
+  }
+} 
+@media only screen and (max-width: 276px) {
+  .content h1 { 
+    font-size: 25px;
+  }
+  .content p {
+    font-size: 12px;
+  }
+} 
+@media only screen and (max-width: 266px) {
+  .content h1 { 
+    font-size: 24px;
+  }
+  .content p {
+    font-size: 11px;
+  }
+  .hero_learnBtn {
+    font-size: 7px;
+  }
+} 
+@media only screen and (max-width: 256px) {
+  .content h1 { 
+    font-size: 23px;
+  } 
+} 
+@media only screen and (max-width: 246px) {
+  .content h1 { 
+    font-size: 22px;
+  }
+  .content p {
+    font-size: 10px;
+  }
+  .hero_learnBtn {
+    padding: 6px 10px;
+  }
+} 
+@media only screen and (max-width: 237px) {
+  .content h1 { 
+    font-size: 21px;
+  } 
+} 
+@media only screen and (max-width: 227px) {
+  .content h1 { 
+    font-size: 20px;
+  }
+  .content p {
+    font-size: 9px;
+  }
+  .hero_learnBtn {
+    padding: 5px 8px;
+  }
+} 
+@media only screen and (max-width: 217px) {
+  .content h1 { 
+    font-size: 19px;
+  } 
+} 
+@media only screen and (max-width: 207px) {
+  .content h1 { 
+    font-size: 18px;
+  }
+  .content p {
+    font-size: 8px;
+  }
+} 
+@media only screen and (max-width: 197px) {
+  .content h1 { 
+    font-size: 17px;
+  }
+  .hero_learnBtn {
+    padding: 3px 5px;
+  }
+} 
+@media only screen and (max-width: 187px) {
+  .content h1 { 
+    font-size: 15px;
+  }
+  .content p {
+    font-size: 7px;
+  }
+} 
+@media only screen and (max-width: 168px) {
+  .content h1 { 
+    font-size: 13px;
+  }
+  .content p {
+    font-size: 6px;
+  }
+}

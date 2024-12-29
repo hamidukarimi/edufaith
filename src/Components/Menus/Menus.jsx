@@ -64,7 +64,7 @@ function Menus() {
             }}
           >
             <div className="menus-item">
-              <span style={{ textAlign: "center", lineHeight: 0.7 }}>
+              <span style={{ textAlign: "center", lineHeight: 0.7, display: "block" }}>
                 <FontAwesomeIcon icon={menusItem.src} />
                 <span style={{ fontSize: "14px" }}>{menusItem.name}</span>
               </span>
