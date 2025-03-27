@@ -194,7 +194,7 @@ function Tasbeeh() {
               <span
                 onClick={handleCount}
                 id="count"
-                style={{ fontSize: "75px" }}
+                style={{ fontSize: "75px", cursor: "pointer" }}
                 className="text-success "
               >
                 <FontAwesomeIcon icon={faFingerprint} />

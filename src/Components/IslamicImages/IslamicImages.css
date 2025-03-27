@@ -140,7 +140,7 @@
   /* padding-top: 8px; */
   padding: 8px 5px;
 }
-.reportReasonsParent div:hover {
+.reportReasonsParent div, li:hover {
   background-color: rgb(23, 23, 23); /*changeeee*/
   transition: 0.3s ease;
 

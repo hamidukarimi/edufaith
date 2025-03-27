@@ -6,7 +6,7 @@
     padding: 0;
   }
 } */
- .heroContainer {
+.heroContainer {
   padding: 0;
  }
 #hero_section{ position: relative; width: 100%; height: auto; background-image: url(./hero-background.jpg); background-size: cover; background-position: center; display: flex; justify-content: center; align-items: center; text-align: center; padding: 20px 10px;}
@@ -35,76 +35,6 @@
 
 
 
-.input{
-    width: 92%;
-    height: 43px;
-    border-radius: 10px;
-    border: 1px solid rgb(102, 139, 157);
-    padding-left: 15px;
-    background-color: black; /*a235g*/
-    margin-left: -10px;
-}
-.input_div{
-    display: flex;
-    justify-content: center;
-}
-.input_submit {
-  margin-left: -38px; border: none; padding: 0; background-color: transparent;
-}
-.input::placeholder{ font-size: 20px; color: rgb(115, 138, 148);} /*a235g*/
-#hero_search_icon { width: 30px;}
-@media only screen and (max-width: 315px) {
-  .input {
-    height: 41px;
-  }
-  .input::placeholder {
-    font-size: 18px;
-  }
-}
-@media only screen and (max-width: 290px) {
-  .input {
-    height: 39px;
-  }
-  .input::placeholder {
-    font-size: 16px;
-  }
-  #hero_search_icon { width: 28px;}
-}
-@media only screen and (max-width: 265px) {
-  .input {
-    height: 38px;
-  }
-  .input::placeholder {
-    font-size: 14px;
-  }
-  #hero_search_icon { width: 25px;}
-}
-@media only screen and (max-width: 240px) {
-  .input {
-    height: 36px;
-  }
-  .input::placeholder {
-    font-size: 13px;
-  }
-}
-@media only screen and (max-width: 227px) {
-  .input {
-    height: 35px;
-  }
-  .input::placeholder {
-    font-size: 11px;
-  }
-  #hero_search_icon { width: 22px;}
-}
-@media only screen and (max-width: 200px) {
-  .input {
-    height: 34px;
-  }
-  .input::placeholder {
-    font-size: 10px;
-  }
-  #hero_search_icon { width: 20px;}
-}
 
 
 /* device larging... */

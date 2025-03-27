@@ -26,22 +26,9 @@ function Categories() {
     getUsers();
   }, []);
 
-  const [showAlert, setShowAlert] = useState(false);
-  const handleAlert = () => {
-    setShowAlert(true);
-  };
-  const closeAlert = () => {
-    setShowAlert(false);
-  };
+  const [searchQuery, setSearchQuery] = useState("");
 
   const categories = [
-    // {
-    //   objectId: 1,
-    //   image: "./Quran.png",
-    //   name: "Read Quran",
-    //   nameTwo: "اقرأ القرآن",
-    //   path: "",
-    // },
     {
       objectId: 1,
       image: "./sahaba.png",
@@ -107,6 +94,18 @@ function Categories() {
     },
   ];
 
+  const quranCategory = {
+      objectId: 0,
+      image: "./Quran.png",
+      name: "Read Quran",
+      nameTwo: "اقرأ القرآن",
+      path: "/quranCategories",
+    }
+
+  const filteredItems = categories.filter((item) =>
+    item.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <>
       {loading ? (
@@ -115,10 +114,25 @@ function Categories() {
         </div>
       ) : (
         <section className="indexCategories">
+
+        
+       
+          
+          <input
+            type="search"
+            className="input"
+            placeholder="Search for a category"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+          />
+        
+        
+
+
           <h1>Categories</h1>
 
-          <div className="categories-parent">
-            <NavLink to="./quranCategories">
+           <div> {/*categories-parent */}
+            {/* <NavLink to="./quranCategories">
               <div className="quran-div">
                 <img
                    
@@ -128,10 +142,65 @@ function Categories() {
                 />
                 <p className="mt-2" >اقرأ القرآن</p>
               </div>
-            </NavLink>
+            </NavLink> */}
+
+            
+
+            
+
+
+
+
+            {searchQuery ? (
+              <div>
+
+            {filteredItems.length > 0 ? (
+              filteredItems.map((item, index) => (
 
             <div style={{}} id="categoriesParent">
-              {categories.map((category) => (
+
+                <NavLink  to={item.path}>
+                  <div className="category some-a">
+                    <div className="category-img-parent">
+                      <div className="category-img">
+                        <img className="card-img" src={item.image} alt="" />
+                      </div>
+                    </div>
+                    <p>{item.name}</p>
+                    <p>{item.nameTwo}</p>
+                  </div>
+                </NavLink>
+
+                </div>
+              ))
+            ) : (
+              <div style={{width: "100%", height: "100px", position: "relative",}}>
+                <p style={{color: "#b9b9b9", position: "absolute", left: "50%", top: "50%", transform: "translate(-50%, -50%)",  textAlign: "center"}} className=" fs-2 ">No items found</p>
+              </div>
+            )}
+          </div>
+            /* up to here corrct */
+               
+              ) : (
+           
+             <>
+
+             <NavLink to={quranCategory.path}>
+              <div className="quran-div">
+                <img
+                   
+                  className="qur_div_icon"
+                  src={quranCategory.image}
+                  alt=""
+                />
+                <p className="mt-2" >{quranCategory.name}</p>
+              </div>
+            </NavLink>
+
+
+            <div style={{}} id="categoriesParent">
+
+             {categories.map((category) => (
                 <NavLink key={category.objectId} to={category.path}>
                   <div className="category some-a">
                     <div className="category-img-parent">
@@ -144,18 +213,18 @@ function Categories() {
                   </div>
                 </NavLink>
               ))}
-            </div>
+
+              </div>
+             </>
+            )}
+
+              
+           
           </div>
         </section>
       )}
 
-      {showAlert && (
-        <EduAlert
-          alertMessage="Sorry! You can't access this feature right now. Please try again later."
-          closeAlert={closeAlert}
-        />
-      )}
-      {showAlert ? <Overlay /> : ""}
+      
     </>
   );
 }

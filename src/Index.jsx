@@ -7,7 +7,6 @@ function Index() {
   return (
     <>
       <Header />
-
       <Menus />
 
       <div className="container heroContainer">

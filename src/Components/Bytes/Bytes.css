@@ -119,7 +119,7 @@
     color: dodgerblue;
   }
   .b-scroll-btns {
-    position: relative; top: 185px; width: 34px; height: 34px; border: 1px solid rgba(30, 143, 255, 0.242); border-radius: 50%;background-color: black; /*a235g*/ color: dodgerblue;
+    position: relative; top: 185px; width: 34px; height: 34px; border: 1px solid rgba(30, 143, 255, 0.242); border-radius: 50%;background-color: black; z-index: 1; /*a235g*/ color: dodgerblue;
   }
   #wiki_heading {
     font-size: 25px;

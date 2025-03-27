@@ -80,7 +80,7 @@ function HelpCenter() {
                 required
               ></textarea>
             </div>
-            <button className=" btn btn-primary w-100 p-2" id="submit" type="submit">
+            <button className=" btn btn-primary  p-2" id="submit" type="submit">
               Submit
             </button>
           </form>

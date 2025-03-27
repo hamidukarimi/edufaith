@@ -111,6 +111,7 @@ const Qibla = () => {
           left: "20px",
           top: "20px",
           fontSize: "23px",
+          cursor: "pointer"
         }}
       >
         <FontAwesomeIcon icon={faArrowLeft} /> Back

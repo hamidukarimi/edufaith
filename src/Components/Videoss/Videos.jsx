@@ -1276,7 +1276,23 @@ function Videos() {
 
           {activeSection === "Shorts" && (
             <section>
-              <h2>Shorts</h2>
+              <div style={styles.container}>
+                <div
+                  style={{
+                    width: "100vw",
+                    display: "flex",
+                    justifyContent: "center",
+                  }}
+                >
+                  <div style={styles.card}>
+                    
+                    <h1 style={styles.heading}>No shorts yet</h1>
+                    <p style={styles.subText}>
+                      We are still working on this section to add new features.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </section>
           )}
 

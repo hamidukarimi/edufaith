@@ -54,18 +54,18 @@ let Ayah = ({ currentAyah, translation, tafseer, handleFunc }) => {
             }}
           >
             {/* <p>1:1</p> */}
-            <FontAwesomeIcon icon={faCopy} />
-            <FontAwesomeIcon onClick={handleTafseerAyah} icon={faBookOpen} />
-            <FontAwesomeIcon
+            <FontAwesomeIcon style={{cursor: "pointer"}} icon={faCopy} />
+            <FontAwesomeIcon style={{cursor: "pointer"}} onClick={handleTafseerAyah} icon={faBookOpen} />
+            <FontAwesomeIcon 
               style={{
-                color: isHighLighted ? "dodgerblue" : "",
+                color: isHighLighted ? "dodgerblue" : "", cursor: "pointer"
               }}
               onClick={handleHighLightClick}
               icon={faHighlighter}
             />
           </div>
           <div onClick={handleFunc} style={{ fontSize: "19px" }}>
-            <FontAwesomeIcon icon={faBookmark} />
+            <FontAwesomeIcon style={{cursor: "pointer"}} icon={faBookmark} />
           </div>
         </div>
         <div className="my-3 currentAyahParent">
@@ -111,9 +111,9 @@ let ReadQuran = () => {
     },
     {
       id: 1,
-      currentAyah: "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ ②",
+      currentAyah: "الرحمن الرحیم ②",
       translation: "Thi is an example text",
-      tafseer: "this is an example text for the tafseer placeholder",
+      tafseer: "this is also an example text, but for second ayah.",
     },
     {
       id: 2,

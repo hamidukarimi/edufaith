@@ -1,3 +1,69 @@
+.input{
+  width: 100%;
+  height: 46px;
+  border-radius: 8px;
+  border: 1px solid rgb(102, 139, 157);
+  padding-left: 15px;
+  background-color: black; /*a235g*/
+  margin-bottom: 35px;
+  margin-top: 11px;
+}
+
+.input::placeholder{ font-size: 20px; color: rgb(115, 138, 148);} /*a235g*/
+
+@media only screen and (max-width: 315px) {
+.input {
+  height: 41px;
+}
+.input::placeholder {
+  font-size: 18px;
+}
+}
+@media only screen and (max-width: 290px) {
+.input {
+  height: 39px;
+}
+.input::placeholder {
+  font-size: 16px;
+}
+
+}
+@media only screen and (max-width: 265px) {
+.input {
+  height: 38px;
+}
+.input::placeholder {
+  font-size: 14px;
+}
+
+}
+@media only screen and (max-width: 240px) {
+.input {
+  height: 36px;
+}
+.input::placeholder {
+  font-size: 13px;
+}
+}
+@media only screen and (max-width: 227px) {
+.input {
+  height: 35px;
+}
+.input::placeholder {
+  font-size: 11px;
+}
+
+}
+@media only screen and (max-width: 200px) {
+.input {
+  height: 34px;
+}
+.input::placeholder {
+  font-size: 10px;
+}
+
+}
+
 .indexCategories{
   padding: 15px;
 }

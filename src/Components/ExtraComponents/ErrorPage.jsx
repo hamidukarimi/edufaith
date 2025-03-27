@@ -18,7 +18,7 @@ const ErrorPage = () => {
       fontSize: "70px",
       fontWeight: "bold",
       margin: "0",
-      color: "#ff6b6b",
+      color: "dodgerblue",
     },
     message: {
       fontSize: "1.5rem",

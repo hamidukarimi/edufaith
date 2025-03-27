@@ -19,13 +19,8 @@ import { faGooglePlay, faApple } from "@fortawesome/free-brands-svg-icons";
 import "./Sidebar.css";
 
 function SidebarItem({ icon, name, path }) {
-
-  
-
   return (
     <>
-
-
       <NavLink
         to={path}
         exact
@@ -46,14 +41,11 @@ function SidebarItem({ icon, name, path }) {
           <span>{name}</span>
         </div>
       </NavLink>
-
-    
     </>
   );
 }
 
 function Sidebar({ closeSidebar }) {
-
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true); // State to track loading status
   useEffect(() => {
@@ -64,7 +56,7 @@ function Sidebar({ closeSidebar }) {
       } catch (error) {
         console.error("Error fetching users:", error);
       } finally {
-        setLoading(false); 
+        setLoading(false);
       }
     }
     getUsers();
@@ -72,106 +64,132 @@ function Sidebar({ closeSidebar }) {
 
   return (
     <>
-        
-{loading ? (
+      {loading ? (
         <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  width: "100%",
-                  height: "100%",
-                }}
-                id="byteContainer"
-                className=" "
-              >
-                <div style={{width: "35px", height: "35px"}} className="bytes_spinner"></div>
-              </div>
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            width: "100%",
+            height: "100%",
+          }}
+          id="byteContainer"
+          className=" "
+        >
+          <div
+            style={{ width: "35px", height: "35px" }}
+            className="bytes_spinner"
+          ></div>
+        </div>
       ) : (
-      <div className="sidebar">
-        <div className="sidebar-divs sidebar-logo-div">
-          <div className="logo-and-name-parent">
-            <img
-              className="website-logo"
-              src="./eduFaith-new-logo.png"
-              alt="EduFaith logo"
-            />
+        <div className="sidebar">
+          <div className="sidebar-divs sidebar-logo-div">
+            <div className="logo-and-name-parent">
+              <img
+                className="website-logo"
+                src="./eduFaith-new-logo.png"
+                alt="edufaith logo"
+              />
 
-            <span className="edufaith-logo-text-span">
-              <p id="edufaith-logo-text">EduFaith</p>
-            </span>
-          </div>
+              <span className="edufaith-logo-text-span">
+                <p id="edufaith-logo-text">edufaith</p>
+              </span>
+            </div>
 
-          {/* <div className="logo-and-name-parent"></div>
+            {/* <div className="logo-and-name-parent"></div>
           <span onClick={closeSidebar} id="close-btn">
             <Fon  tAwesomeIcon icon={faClose} />
           </span> */}
-        </div> 
-
-        <SidebarItem icon={faHome} name="Home" path="/" />
-        <SidebarItem icon={faEye} name="Bytes" path="/bytes" />
-        <SidebarItem icon={faImages} name="Islamic Photos" path="/islamicImages" />
-        <SidebarItem icon={faVideo} name="Videos" path="/videos" />
-        <SidebarItem icon={faMusic} name="Islamic Music" path="/music" />
-        <SidebarItem
-          icon={faBookOpenReader}
-          name="Islamic Questions"
-          path="/islamicQuestions"
-        />
-        <hr />
-        <SidebarItem icon={faCircleDot} name="Quran" path="/quranCategories" />
-        <SidebarItem icon={faCircleDot} name="Companions" path="/companions" />
-        <SidebarItem icon={faCircleDot} name="Hadiths" path="/hadiths" />
-        <SidebarItem icon={faCircleDot} name="Dua" path="/dua" />
-        <SidebarItem icon={faCircleDot} name="Core Teachings" path="/coreTeachings" />
-        <SidebarItem icon={faCircleDot} name="Qibla Direction" path="/qibla" />
-        <SidebarItem icon={faCircleDot} name="Allah Names" path="/allahNames" />
-        <SidebarItem icon={faCircleDot} name="Tasbeeh" path="/tasbeeh" />
-        <SidebarItem
-          icon={faCircleDot}
-          name="Islamic Battles"
-          path="/islamicBattles"
-        />
-        <SidebarItem icon={faCircleDot} name="Haj" path="/haj" />
-
-        <hr />
-        <p className="someHeading" >
-          Developers
-        </p>
-
-        <a
-          href="https://www.facebook.com/profile.php?id=100090254793971"
-          target="_blank"
-        >
-          <div className="sidebar-divs page-type">
-            <span className="sid-div-icons">
-              <img id="devlopers-img" src="./hamid-karimi.jpg" />
-            </span>
-            <span>Hamid Karimi</span>
           </div>
-        </a>
 
-        <hr />
+          <SidebarItem icon={faHome} name="Home" path="/" />
+          <SidebarItem icon={faEye} name="Bytes" path="/bytes" />
+          <SidebarItem
+            icon={faImages}
+            name="Islamic Photos"
+            path="/islamicImages"
+          />
+          <SidebarItem icon={faVideo} name="Videos" path="/videos" />
+          <SidebarItem icon={faMusic} name="Islamic Music" path="/music" />
+          <SidebarItem
+            icon={faBookOpenReader}
+            name="Islamic Questions"
+            path="/islamicQuestions"
+          />
+          <hr />
+          <SidebarItem
+            icon={faCircleDot}
+            name="Quran"
+            path="/quranCategories"
+          />
+          <SidebarItem
+            icon={faCircleDot}
+            name="Companions"
+            path="/companions"
+          />
+          <SidebarItem icon={faCircleDot} name="Hadiths" path="/hadiths" />
+          <SidebarItem icon={faCircleDot} name="Dua" path="/dua" />
+          <SidebarItem
+            icon={faCircleDot}
+            name="Core Teachings"
+            path="/coreTeachings"
+          />
+          <SidebarItem
+            icon={faCircleDot}
+            name="Qibla Direction"
+            path="/qibla"
+          />
+          <SidebarItem
+            icon={faCircleDot}
+            name="Allah Names"
+            path="/allahNames"
+          />
+          <SidebarItem icon={faCircleDot} name="Tasbeeh" path="/tasbeeh" />
+          <SidebarItem
+            icon={faCircleDot}
+            name="Islamic Battles"
+            path="/islamicBattles"
+          />
+          <SidebarItem icon={faCircleDot} name="Haj" path="/haj" />
 
-        <SidebarItem icon={faGear} name="Settings" path="/settings" />
-        <hr />
+          <hr />
+          <p className="someHeading">Developers</p>
 
-        <p className="someHeading" >
-          Download Mobile App
-        </p>
+          <a
+            href="https://www.facebook.com/profile.php?id=100090254793971"
+            target="_blank"
+          >
+            <div className="sidebar-divs page-type">
+              <span className="sid-div-icons">
+                <img id="devlopers-img" src="./hamid-karimi.png" />
+              </span>
+              <span>Hamid Karimi</span>
+            </div>
+          </a>
 
-        <SidebarItem icon={faGooglePlay} name="Android" path="/404error" />
-        <SidebarItem icon={faApple} name="iOS" path="/404error" />
-        <hr />
-        <SidebarItem icon={faQuestion} name="Help Center" path="/helpCenter" />
+          <hr />
 
-        <hr />
-        <p className="p-2 text-info">Copyright © 2024. EduFaith</p>
-        <br />
-        <br /> 
-        <br /> 
-      </div>
-    )}
+          <SidebarItem icon={faGear} name="Settings" path="/settings" />
+          <hr />
+
+          <p className="someHeading">Download Mobile App</p>
+
+          <SidebarItem icon={faGooglePlay} name="Android" path="/404error" />
+          <SidebarItem icon={faApple} name="iOS" path="/404error" />
+          <hr />
+          <SidebarItem
+            icon={faQuestion}
+            name="Help Center"
+            path="/helpCenter"
+          />
+
+          <hr />
+          <p className="p-2 text-info">Copyright © 2024. edufaith</p>
+          <br />
+          <br />
+          <br />
+        </div>
+      )}
     </>
   );
 }
@@ -226,7 +244,6 @@ export let MenuBar = () => {
 
   return (
     <>
-
       <div className="menu-bar">
         {items.map((item) => (
           <NavLink
@@ -247,8 +264,6 @@ export let MenuBar = () => {
           </NavLink>
         ))}
       </div>
-
-    
     </>
   );
 };

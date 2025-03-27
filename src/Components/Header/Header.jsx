@@ -64,10 +64,10 @@ function Header() {
             <img
               className="website-logo"
               src="./eduFaith-new-logo.png"
-              alt="EduFaith logo"
+              alt="edufaith logo"
             />
           </NavLink>
-          <p className="pt-3">EduFaith</p>
+          <p className="pt-3">edufaith</p>
         </span>
 
    

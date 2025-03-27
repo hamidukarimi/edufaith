@@ -70,12 +70,19 @@ export let OpenImage = ({ image, url, description, closePage }) => {
     }
   };
 
+  // const [showReportModal, setShowReportModal] = useState(false);
+  // const [reportReason, setReportReason] = useState(""); // Track the selected reason
+
+  // const toggleReportModal = () => {
+  //   setShowReportModal(!showReportModal); // Toggle modal visibility
+  // };
+
   const [showReportModal, setShowReportModal] = useState(false);
-  const [reportReason, setReportReason] = useState(""); // Track the selected reason
 
   const toggleReportModal = () => {
-    setShowReportModal(!showReportModal); // Toggle modal visibility
+    setShowReportModal(!showReportModal);
   };
+  // end of report
 
   const [showShareOptions, setShowShareOptions] = useState(false);
 
@@ -193,7 +200,7 @@ export let OpenImage = ({ image, url, description, closePage }) => {
 
             {/* Report Modal */}
             {showReportModal && (
-              <div className="reportModal">
+              /* <div className="reportModal">
                 <div className="modalContent">
                   <h2 className="modalTitle px-1">Report Image</h2>
                   <span
@@ -208,10 +215,10 @@ export let OpenImage = ({ image, url, description, closePage }) => {
                     }}
                   >
                     <FontAwesomeIcon icon={faTimes} />
-                  </span>
+                  </span> */
 
-                  {/* Report Reasons */}
-                  {/* <select
+                  /* Report Reasons */
+                  /* <select
                     value={reportReason}
                     onChange={(e) => setReportReason(e.target.value)}
                     className="reportSelect"
@@ -227,10 +234,10 @@ export let OpenImage = ({ image, url, description, closePage }) => {
                       Copyright infringement
                     </option>
                     <option value="Other">Other</option>
-                  </select> */}
+                  </select> */
 
-                  {/* Modal Actions - Submit and Close */}
-                  {/* <div className="modalActions">
+                  /* Modal Actions - Submit and Close */
+                  /* <div className="modalActions">
                     <button
                       className="btn-submit"
                       onClick={() => {
@@ -247,16 +254,43 @@ export let OpenImage = ({ image, url, description, closePage }) => {
                     >
                       Close
                     </button>
-                  </div> */}
+                  </div> */
 
-                  <div className="reportReasonsParent">
+                  /* <div className="reportReasonsParent">
                     <div>Lorem Ispum dller sign is</div>
                     <div>Lorem Ispum dller sign is</div>
                     <div>Lorem Ispum dller sign is</div>
                     <div>Lorem Ispum dller sign is</div>
                   </div>
                 </div>
+              </div> */
+
+
+              <div className="shareOptionsContainer ">
+              <div className="shareOptionsModal bg-black " style={{boxShadow: "0 4px 25px rgba(106, 106, 106, 0.4)", borderTop: "1px solid rgb(30, 30, 30)"}}>
+                <div className="shareOptionsHeader mb-1">
+                  <p className="shareOptionsTitle fs-4">Report Image</p>
+                  <button
+                    className="closeShareOptionsBtn"
+                    onClick={toggleReportModal}
+                  >
+                    <FontAwesomeIcon icon={faTimes} />
+                  </button>
+                </div>
+
+                <div className="shareOptionsList ">
+                
+                  <div style={{lineHeight: 2, fontSize: "20px"}} className="reportReasonsParent">
+                  <li style={{listStyleType: "none", cursor: "pointer", }}>Inappropriate content</li>
+                  <li style={{listStyleType: "none", cursor: "pointer", }}>Spam or misleading</li>
+                  <li style={{listStyleType: "none", cursor: "pointer", }}>Copyright infringement</li>
+                  <li style={{listStyleType: "none", cursor: "pointer", }}>Other</li>
+
+                  </div>
+                 
+                </div>
               </div>
+            </div>
             )}
           </div>
 
@@ -359,9 +393,7 @@ let IslamicImages = () => {
               placeholder="Search for free photos "
               className="mt-4 w-100 input p-4 "
             />
-            <button type="submit" className="input_submit">
-              <img src="./Search.png" width="30" />
-            </button>
+           
           </div>
         </section>
 
@@ -535,6 +567,10 @@ let IslamicImages = () => {
           )}
         </section>
       </div>
+
+      <br />
+      <br />
+      <br />
     </>
   );
 };
